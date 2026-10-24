@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Искусства | Мой первый сайт</title>
+    <style>
+        /* Мои первые эксперименты с CSS! */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f6f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c2c2c;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            color: #d1a153;
+            font-style: italic;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #d1a153;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c2c2c;
+            border-bottom: 2px solid #d1a153;
+            padding-bottom: 5px;
+        }
+        .art-card {
+            background: #fdfbf7;
+            border-left: 4px solid #d1a153;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c2c2c;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Галерея души</h1>
+        <p>Мой самый первый проект о прекрасном</p>
+    </header>
+
+    <nav>
+        <a href="#about">О проекте</a>
+        <a href="#styles">Направления</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>О чём этот сайт?</h2>
+            <p> как начинающий програмист, я решил содать первый сайт о искусстве, потому что Искусство — это то, что вдохновляет больше всего, вот почему я решил потренироваться именно на этой теме.</p>
+        </section>
+
+        <section id="styles">
+            <h2>Великие направления</h2>
+            
+            <div class="art-card">
+                <h3>Эпоха Возрождения (Ренессанс)</h3>
+                <p>Время, когда искусство ожило заново. Гармония, анатомическая точность и невероятный свет. Кто не знает Леонардо да Винчи или Микеланджело?                
+            </p>
+            <img src='1.jpg' style="width: 300px; border-radius: 4px;"> </img>
+            </div>
+
+            <div class="art-card">
+                <h3>Импрессионизм</h3>
+                <p>Момент, пойманный на холсте. Живые мазки, игра света и воздуха. Моне, Ренуар, Дега — картины этих мастеров заставляют затаить дыхание.
+                </p>
+                <img src='2.jpg' style="width: 300px; border-radius: 4px;"> </img>
+            </div>
+
+            <div class="art-card">
+                <h3>Сюрреализм</h3>
+                <p>Мир фантазий и снов, где логика отступает на второй план. Сальвадор Дали и Рене Магритт открывают двери в совершенно другие измерения.</p>
+                <img src='3.jpg' style="width: 300px; border-radius: 4px;"> </img>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Свяжитесь со мной</h2>
+            <p>Так как я только начинающий разработчик, буду очень рад вашим советам и критике!</p>
+            <p>📧 Email: <strong>future-coder@art-space.test</strong></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 | Создано начинающим программистом с любовью к искусству ✨</p>
+    </footer>
+
+</body>
+</html>
