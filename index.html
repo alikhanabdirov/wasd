@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мир Искусства | Мой первый сайт</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Chameleon Theme Variables */
         :root {
@@ -39,20 +40,14 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            margin: 0;
-            padding: 0;
             line-height: 1.6;
             transition: background-color 0.4s ease, color 0.4s ease;
         }
         header {
             background-color: var(--header-bg);
-            color: #fff;
-            text-align: center;
-            padding: 2rem;
             transition: background-color 0.4s ease;
         }
         header h1 {
-            margin: 0;
             font-size: 2.5rem;
             letter-spacing: 2px;
         }
@@ -241,7 +236,7 @@
             border-radius: 6px;
             box-shadow: 0 5px 25px rgba(0,0,0,0.6);
             transform: scale(0.9);
-            transition: transform 0.3s ease;
+            transition: transform 0.2s ease;
         }
         .lightbox-modal.active .lightbox-img {
             transform: scale(1);
@@ -260,8 +255,7 @@
             color: #d1a153;
         }
     </style>
-</head>
-<body>
+<body class="p-0 m-0">
 
     <!-- The Floating Theme Toggle Button -->
     <button class="floating-btn" id="theme-btn">🌙</button>
@@ -272,8 +266,8 @@
         <img class="lightbox-img" id="lightbox-img" src="" alt="">
     </div>
 
-    <header>
-        <h1>Галерея души</h1>
+    <header class="text-white p-5 text-center font-bold">
+        <h1 class="m-0">Галерея души</h1>
         <p>Мой самый первый проект о прекрасном</p>
     </header>
 
@@ -372,7 +366,6 @@
 
     <!-- JavaScript for Theme Toggle & Lightbox Popup -->
     <script>
-        // 1. Theme Toggle Logic
         const themeBtn = document.getElementById('theme-btn');
 
         if (themeBtn) {
