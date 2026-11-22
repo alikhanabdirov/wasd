@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Имя Фамилия — Портфолио</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 antialiased">
+
+  <!-- Шапка -->
+  <header class="sticky top-0 z-10 border-b border-amber-500/20 bg-neutral-950/90 backdrop-blur">
+    <div class="mx-auto flex max-w-4xl items-center justify-between px-5 py-4">
+      <a href="#" class="font-bold text-lg text-amber-400">Имя Фамилия</a>
+      <nav class="flex gap-6 text-sm text-neutral-400">
+        <a href="#projects" class="hover:text-amber-400 transition-colors">Проекты</a>
+        <a href="#about" class="hover:text-amber-400 transition-colors">Обо мне</a>
+        <a href="#contacts" class="hover:text-amber-400 transition-colors">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-4xl px-5">
+    <!-- Главный экран -->
+    <section class="py-16 md:py-24">
+      <span class="text-sm font-semibold uppercase tracking-wider text-amber-400">Ваша специализация</span>
+      <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-5xl">Привет, я Имя Фамилия</h1>
+      <p class="mt-4 max-w-xl text-lg text-neutral-400">
+        Короткий оффер в 1–2 предложениях: какую задачу вы решаете и какую пользу приносите клиентам или команде.
+      </p>
+      <a href="#contacts" class="mt-7 inline-block rounded-lg bg-amber-400 px-6 py-3 text-sm font-semibold text-neutral-950 hover:bg-amber-300 transition-colors">
+        Связаться со мной
+      </a>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="py-12">
+      <h2 class="text-2xl font-bold text-white">мой первый и покачто единственный проект</h2>
+      <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <article class="flex flex-col justify-between rounded-xl border border-neutral-800 bg-neutral-900 p-6 hover:border-amber-500/40 transition-colors">
+          <div>
+            <h3 class="text-lg font-semibold text-white">Название проекта 1</h3>
+            <p class="mt-2 text-sm text-neutral-400"><strong class="text-neutral-200">Задача:</strong> введение в основы икусства, попытка заинтерисовать в нем</p>
+            <p class="mt-1 text-sm text-neutral-400"><strong class="text-neutral-200">Решение:</strong> сделал керточки нескольких стилей для знакомства с красатой искусства.</p>
+          </div>
+          <a href="https://starlit-lamington-a99207.netlify.app/" class="mt-4 inline-block text-sm font-semibold text-amber-400 hover:text-amber-300">Смотреть сайт →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section id="about" class="py-12">
+      <h2 class="text-2xl font-bold text-white">Обо мне</h2>
+      <div class="mt-6 rounded-xl border border-neutral-800 bg-neutral-900 p-6">
+        <p class="text-neutral-400">
+          Кратко об опыте, ключевых направлениях и формате работы (штат, фриланс, консультации).
+        </p>
+        <ul class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
+          <li class="rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-amber-300">HTML / CSS</li>
+          <li class="rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-amber-300">Tailwind CSS</li>
+          <li class="rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-amber-300">JavaScript</li>
+          <li class="rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-amber-300">Git</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Контакты -->
+  <footer id="contacts" class="mt-12 border-t border-neutral-800 bg-neutral-900/50 py-10">
+    <div class="mx-auto max-w-4xl px-5">
+      <h2 class="text-2xl font-bold text-white">Контакты</h2>
+      <p class="mt-1 text-neutral-400">Открыт к интересным проектам и предложениям.</p>
+      <div class="mt-4 flex flex-wrap gap-5 text-sm font-medium text-amber-400">
+        <a href="mailto:name@example.com" class="hover:text-amber-300 hover:underline">name@example.com</a>
+        <a href="https://t.me/username" target="_blank" rel="noopener" class="hover:text-amber-300 hover:underline">Telegram</a>
+        <a href="https://github.com/username" target="_blank" rel="noopener" class="hover:text-amber-300 hover:underline">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
